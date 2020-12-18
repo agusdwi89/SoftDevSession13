@@ -1,6 +1,6 @@
 console.clear();
 var PersonLogic = require('./domain/person/person.logic')
-var person1 = new PersonLogic('Tata', '6403052010930001', '1993-10-20');
+var person1 = new PersonLogic('Agus DP', '3502007088900203', '1989-08-07');
 
 if (person1.getWeekType() === 'Weekday' || person1.getWeekType() === 'Weekend') {
   console.log(`${person1.name} lahir pada tipe minggu ${person1.getWeekType()}`)
