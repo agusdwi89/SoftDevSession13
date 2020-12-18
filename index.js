@@ -1,3 +1,4 @@
+console.clear();
 var PersonLogic = require('./domain/person/person.logic')
 var person1 = new PersonLogic('Tata', '6403052010930001', '1993-10-20');
 
@@ -10,5 +11,11 @@ console.log(`Saat ini berumur ${person1.getAge()}`)
 
 
 var PersonAge = require('./domain/personAge/personAge.logic')
-var age1 = new PersonAge('Tata', '6403052010930001', '1993-10-20');
+var age1 = new PersonAge('Agus DP', '3502007088900203', '1989-08-07');
 console.log(`Merupakan seorang ${age1.personByAge()}`)
+
+
+var PersonNik = require('./domain/personNik/personNik.logic')
+var age1 = new PersonNik('Agus DP', '3502007088900203', '1989-08-07');
+console.log(`Check validity NIK :  ${age1.validateLength()}`)
+console.log(`Check validity NIK & Dob:  ${age1.validateBod()}`)
